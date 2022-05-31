@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="CSS/commonStyle.css" />
+    <link rel="stylesheet" href="CSS/homepageStyle.css" />
+    <link rel="stylesheet" href="CSS/feedbackStyle.css"/>
+  </head>
+  <body>
+    <header>
+      <a href="homepage.html">
+        <img src="images/logo.png" alt="Logo Image" id="logo"
+      /></a>
+      <nav>
+        <a href="homepage.html">Home</a>
+            <a href="KyotoOsaka.html">Kyoto-Osaka</a>
+            <a href="Sabah.html">Sabah</a>
+            <a href="Shanghai.html">Shanghai</a>
+            <a href="Paris.html">Paris</a>
+            <a href="Phuket.html">Phuket</a>
+            <a href="Penghu.html">Penghu</a>
+            <a href="travel-cost-estimator.html">Travel-Cost-Estimator</a>
+            <a href="feedback.html">Feedback</a>
+      </nav>
+    </header>
+
+    
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form>
+          <div class="rowTop"><label for="fname">First Name</label></div>
+          <div class="rowBottom"><input type="text" id="fname" name="firstname" /></div>
+
+          <div class="rowTop"><label for="lname">Last Name</label></div>
+          <div class="rowBottom"><input type="text" id="lname" name="lastname" /></div>
+
+          <div class="rowTop"><label for="email">Email Address</label></div>
+          <div class="rowBottom"><input type="text" id="email" name="email" /></div>
+
+          <div class="rowTop"><label for="destination">Destination</label></div>    
+          <div class="rowBottom">    
+              <select id="destination" name="destination">    
+                <option value="none">Select Your Destination</option>    
+                <option value="kyotoOsaka">Kyoto-Osaka</option>    
+                <option value="sabah">Sabah</option>    
+                <option value="shanghai">ShangHai</option>    
+                <option value="paris">Paris</option>    
+                <option value="penghu">Penghu</option>    
+                <option value="phuket">Phuket</option>     
+              </select>    
+            </div>    
+  
+          <div class="rowTop"><label for="feedback">FeedBack</label></div>
+          <div class="rowBottom"><textarea id="feedback" name="feedback" ></textarea></div>
+
+          <input type="submit" value="Submit" id="submit" />
+      </form>
+    </div>
+    <script src="scripts/feedbackScript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    background-color: aliceblue;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+#logo {
+    height: 40px;
+    width: auto;
+    
+}
+header {
+    height: 30px;
+    background-color: rgb(66, 66, 66);
+    margin: 0;
+    padding: 0;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+nav {
+    color: blanchedalmond;
+    float: right;
+    text-decoration: none;
+    font-family:monospace;
+    font-weight: bolder;
+    font-size: 17px;
+    padding-top: 2%;
+    padding-right: 2%;
+}
+
+nav > a {
+    text-decoration: none;
+    padding-right: 30px;
+    color: white;
+}
+
+nav > a:hover {
+    color:grey;
+}
+
+nav > a:active {
+    color:rgb(101, 141, 143);
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+}

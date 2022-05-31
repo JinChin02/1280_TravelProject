@@ -1,64 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TimStar Travel Group</title>
-
-    <link rel="stylesheet" href="style/style.css">
-
+    <link rel="stylesheet" href="CSS/commonStyle.css" />
+    <link rel="stylesheet" href="CSS/homepageStyle.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
     <header>
-        <a href="HomePage.html" > <img src="picture/logo.png" alt="Logo Image" id="logo"></a>
-        
-       
-
-        <nav>
-            <a href="HomePage.html">Home</a>
-            <a href="KyotoOsaka.html">Kyoto-Osaka</a>
-            <a href="Sabah.html">Sabah</a>
-            <a href="">Des3</a>
-            <a href="">Des4</a>
-            <a href="">Des5</a>
-            <a href="">Des6</a>
-            <a href="">Feedback</a>
-        </nav>
+      <a href="homepage.html">
+        <img src="images/logo.png" alt="Logo Image" id="logo"
+      /></a>
+      <nav>
+        <a href="homepage.html">Home</a>
+        <a href="KyotoOsaka.html">Kyoto-Osaka</a>
+        <a href="Sabah.html">Sabah</a>
+        <a href="Shanghai.html">Shanghai</a>
+        <a href="Paris.html">Paris</a>
+        <a href="Phuket.html">Phuket</a>
+        <a href="Penghu.html">Penghu</a>
+        <a href="travel-cost-estimator.html">Travel-Cost-Estimator</a>
+        <a href="feedback.html">Feedback</a>
+      </nav>
     </header>
-</head>
-<body>
-    <div class="homediv1"></div>
-    <br>
-    <div class="homediv2">
-        <p class="paragraph1"><strong class="ti">KYOTO-OSAKA (JAPAN)</strong><br><br> Known as the ‘Land of the Rising Sun’, Japan is known for its mix of 
-            ancient samurai traditions with a modern-day persona and new world technology. As a land of contrasts, Japan is a fascinating destination for visitors. 
-            The cities of Kyoto and Osaka are widely known for its historical and cultural presence, even today ancient Samurai traditions are still highly respected
-            by the locals and many are still practicing their traditions today.
-            <br><br>
-            Sushi, teppanyaki, ramen and more japanese cuisines have won devotees all over the world, and is way more delicious in Japan itself. 
-            Most traditional eateries in Kyoto and Osaka serve their traditional dishes seasonally using ultra-fresh ingredients normally caught right from the sea 
-            and beautifully plated. Restaurants in Kyoto / Osaka come at all levels from back streets local sushi bars, ramen stalls, to downtown districts home to
-            even worldly recognized restaurants run by celebrity chefs. 
-            <br><br>
-            Visitors need not worry about communication, as many Japanese people speak some English, and the locals are among the most gracious and respectful on the planet.
-        </p>
-        <a href="KyotoOsaka.html"><img src="picture/Kyoto-OsakaJapan.jpg" alt="japan" class="homepic1"></a>
-    </div>
-    <div class="homediv3">
-        <p class="paragraph2"><strong class="ti">SABAH (MALAYSIA)</strong><br><br> 
-            Located at the northen part of the Borneo Island, Sabah is a perfect getaway in the heart of Borneo for its combination of lush rainforest, majestic mountains,
-            tropical islands, undersea wonders, unique cultures and friendly people
-            <br><br>
-            Sabah is the pearl of Borneo with countless ecotourism activities, beach retreats and has almost 400 islands. Tunku Abdul Rahman National Park consists 
-            of five islands forming a chain off the coast of Kota Kinabalu. Some of Sabah's most famous islands include the world–famous diving hotspot Pulau Sipadan, 
-            he most visited island Pulau Manukan, Pulau Sapi, and Pulau Gaya. 
-            <br><br>
-            Boasting as SouthEast Asia tallest mountain and a well known world heritage, Mount Kinabalu peak at 4,095 metres (13,435 feet) is also one of the reason 
-            to visit Sabah. Climbing to the summit peak will involves staying overnight on the mountain accomodation and spots fill up months in advance. According to 
-            traditions, Mount Kinabalu is also a sacred site for the local Kazadan-Dusun ethnic.
 
-        </p>
-        <a href="Sabah.html"><img src="picture/SabahMalaysia.jpg " alt="japan" class="homepic2"></a>
+    <br />
+
+    <div id="pictures">
+      <ul>
+        <li><img src="images/shanghai.jpg" alt="shanghai" /></li>
+        <li><img src="images/paris.jpg" alt="paris" /></li>
+        <li><img src="images/PenghuTaiwan.jpg" alt="penghu" /></li>
+        <li><img src="images/SabahMalaysia.jpg" alt="sabah" /></li>
+        <li><img src="images/PhuketThailand.jpg" alt="phuket" /></li>
+        <li><img src="images/Kyoto-OsakaJapan.jpg" alt="Kyoto" /></li>
+      </ul>
     </div>
-    
-</body>
+
+    <div class="intro">
+      <p class="descLeft">
+        <strong class="introTitle">KYOTO-OSAKA (JAPAN)</strong><br /><br />
+        Known as the ‘Land of the Rising Sun’, Japan is known for its mix of
+        ancient samurai traditions with a modern-day persona and new world
+        technology. As a land of contrasts, Japan is a fascinating destination
+        for visitors. The cities of Kyoto and Osaka are widely known for its
+        historical and cultural presence, even today ancient Samurai traditions
+        are still highly respected by the locals and many are still practicing
+        their traditions today. <br /><br />
+        Sushi, teppanyaki, ramen and more japanese cuisines have won devotees
+        all over the world, and is way more delicious in Japan itself. Most
+        traditional eateries in Kyoto and Osaka serve their traditional dishes
+        seasonally using ultra-fresh ingredients normally caught right from the
+        sea and beautifully plated. Restaurants in Kyoto / Osaka come at all
+        levels from back streets local sushi bars, ramen stalls, to downtown
+        districts home to even worldly recognized restaurants run by celebrity
+        chefs.
+        <br /><br />
+        Visitors need not worry about communication, as many Japanese people
+        speak some English, and the locals are among the most gracious and
+        respectful on the planet.
+      </p>
+      <a href="KyotoOsaka.html"
+        ><img
+          src="images/Kyoto-OsakaJapan.jpg"
+          alt="Japan pic"
+          class="picRight"
+      /></a>
+    </div>
+    <div class="intro">
+      <p class="descRight">
+        <strong class="introTitle">SABAH (MALAYSIA)</strong><br /><br />
+        Located at the northen part of the Borneo Island, Sabah is a perfect
+        getaway in the heart of Borneo for its combination of lush rainforest,
+        majestic mountains, tropical islands, undersea wonders, unique cultures
+        and friendly people
+        <br /><br />
+        Sabah is the pearl of Borneo with countless ecotourism activities, beach
+        retreats and has almost 400 islands. Tunku Abdul Rahman National Park
+        consists of five islands forming a chain off the coast of Kota Kinabalu.
+        Some of Sabah's most famous islands include the world–famous diving
+        hotspot Pulau Sipadan, he most visited island Pulau Manukan, Pulau Sapi,
+        and Pulau Gaya.
+        <br /><br />
+        Boasting as SouthEast Asia tallest mountain and a well known world
+        heritage, Mount Kinabalu peak at 4,095 metres (13,435 feet) is also one
+        of the reason to visit Sabah. Climbing to the summit peak will involves
+        staying overnight on the mountain accomodation and spots fill up months
+        in advance. According to traditions, Mount Kinabalu is also a sacred
+        site for the local Kazadan-Dusun ethnic.
+      </p>
+      <a href="Sabah.html"
+        ><img
+          src="images/SabahMalaysia.jpg "
+          alt="Malaysia pic"
+          class="picLeft"
+      /></a>
+    </div>
+
+    <div class="intro">
+      <p class="descLeft">
+        <strong class="introTitle">SHANGHAI (CHINA)</strong><br /><br />
+        Shanghai is one of the few cities in the world evoke so much history,
+        excess, glamour, mystique and exotic promise in name alone. <br /><br />
+        Shanghai is home to the world's second-tallest tower and a host of other
+        neck-craning colossi. But it's not all sky-scraping razzmatazz. Beyond
+        the crisply cool veneer of the modern city typified by Pudong, you can
+        encounter copious architectural styles.
+        <br /><br />
+        Beijing often hogs the limelight as China’s cultural nexus, but for a
+        town of wheelers and dealers, Shanghai is surprisingly creative. Many
+        art galleries are exciting, offering a window into contemporary Chinese
+        concerns, while nightlife options have exploded. Acrobatics shows are
+        always a tourist favourite and you might grab the chance to catch some
+        Chinese opera. Shanghai’s music and club scenes are vibrant: from
+        unpretentious jazz and indie venues to all-night hip-hop and
+        electro-dance parties, the city swings with the best of them.
+        <br />
+        <br />
+        -<cite
+          ><a
+            href="https://www.lonelyplanet.com/a/nar/c1760b07-26c5-4111-bc53-7d6c4d7c4778/356068"
+          >
+            Lovely Planet</a
+          ></cite
+        >
+      </p>
+      <a href="Shanghai.html"
+        ><img src="images/shanghai.jpg" alt="Shanghai pic" class="picRight"
+      /></a>
+    </div>
+    <div class="intro">
+      <p class="descRight">
+        <strong class="introTitle">PARIS (FRANCE)</strong><br /><br />
+        Paris, the City of Light, evokes romantic emotions in anyone who has
+        ever visited. This centuries-old city is the most visited city in the
+        world, and for good reason. There is plenty to do in Paris to satisfy
+        travelers of all tastes.
+        <br /><br />
+        History lovers will marvel at the richness of a city that has seen two
+        major revolutions and was home to many of the most powerful monarchies
+        of Europe. Art lovers could spend a lifetime browsing the galleries of
+        the world famous Louvre museum, the Musee d’Orsay or countless other
+        smaller art museums the city has to offer. The gourmet in you can
+        indulge in literally any type of culinary extasy--Paris has them all in
+        its small bistrots, charming cafes, elegant restaurants and decadent
+        patisseries. Fashion seekers will be in heaven in Paris’ finest
+        department stores and most exclusive boutiques.
+        <br /><br />
+        -<cite
+          ><a
+            href="https://www.tripadvisor.com/Travel-g187147-c1207/Paris:France:Introduction.html"
+          >
+            Tripadvisor</a
+          ></cite
+        >
+      </p>
+      <a href="Paris.html"
+        ><img src="images/paris.jpg " alt="Paris pic" class="picLeft"
+      /></a>
+    </div>
+    <div class="intro">
+      <p class="descLeft"><strong class="introTitle">PHUKET (THAILAND)</strong><br><br> 
+          Phuket refers to both the province and the island in southern Thailand. It’s the country’s second smallest province but it’s biggest island, home to 
+          beautiful white sand beaches along its southern and western coast and a spattering of smaller islands just off the mainland.
+          <br><br>
+          Surrounded by the Andaman Sea and about an hour by plane from Bangkok, this island is a little piece of paradise, which comes with a relatively 
+          low price tag for everything from its accommodations to spa treatments and boat tours. Phuket is a tropical island destination so the best time to 
+          go is largely dependent on the weather. Phuket is least rainy from around the end of November till mid-April, making this the ideal time to visit. 
+          <br><br>
+          Friendly people, varied cuisine, tropical climate and range of amenities on this island can give everyone an ideal destination for a holiday or long term stay.
+          
+      </p>
+      <a href="Phuket.html"><img src="images/PhuketThailand.jpg" alt="Thailand pic" class="picRight"></a>
+  </div>
+  <div class="intro">
+      <p class="descRight"><strong class="introTitle">PENGHU COUNTY (TAIWAN)</strong><br><br> 
+          Locating at the southwest of Taiwan Strait composing of 90 islands, 
+          Penghu County has a steeped in history and culture with gorgeous ocean views and various natural wonders.  
+          <br><br>
+          One of the major element which sculpted Penghu's geological landscape are the world famous hexagonal Basalt columns that surround the entire island. 
+          Furthermore, the clear waters of Bays and strong winter winds have put Penghu on the for competitive sailing map as an international hot spot. For tourism, 
+          the government host magnificent firework festivals in the spring and summer. In fall and winter, the fresh and delicious catch of the sea at the Penghu 
+          Seafood Carnival. 
+          <br><br>
+          If you like seaside fun with blue seas, clear skies, soft white beaches, plenty of beach and water recreation facilities, and an amazing marine ecology 
+          and scenic beauty, Penghu is the one of the best place to visit.
+      </p>
+      <a href="Penghu.html"><img src="images/PenghuTaiwan.jpg" alt="Taiwan pic" class="picLeft"></a>
+  </div>
+
+  <script src="scripts/homepageScript.js"></script>
+
+  </body>
 </html>

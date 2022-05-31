@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimStar Travel Group</title>
+    <link rel="stylesheet" href="CSS/commonStyle.css" />
+    <link rel="stylesheet" href="CSS/travelCostStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="homepage.html">
+        <img src="images/logo.png" alt="Logo Image" id="logo"
+      /></a>
+      <nav>
+        <a href="homepage.html">Home</a>
+        <a href="KyotoOsaka.html">Kyoto-Osaka</a>
+        <a href="Sabah.html">Sabah</a>
+        <a href="Shanghai.html">Shanghai</a>
+        <a href="Paris.html">Paris</a>
+        <a href="Phuket.html">Phuket</a>
+        <a href="Penghu.html">Penghu</a>
+        <a href="travel-cost-estimator.html">Travel-Cost-Estimator</a>
+        <a href="feedback.html">Feedback</a>
+      </nav>
+    </header>
+
+    <h2>Choose Your Destination To Estimate Travel Cost</h2>
+    <div class="container">
+      <ul class="tabs" id="tab_nav">
+        <li class="tab-link"><a href="#tab-1">Kyoto-Osaka</a></li>
+        <li class="tab-link"><a href="#tab-2">Sabah</a></li>
+        <li class="tab-link"><a href="#tab-3">Shanghai</a></li>
+        <li class="tab-link"><a href="#tab-4">Paris</a></li>
+        <li class="tab-link"><a href="#tab-5">Penghu</a></li>
+        <li class="tab-link"><a href="#tab-6">Phuket</a></li>
+      </ul>
+
+      <div id="tab-1" class="tab-content">
+        <form id="travel">
+          <fieldset>
+            <legend>Choose your flight classes:</legend>
+            <input type="radio" name="flight" id="first" value="4000" />First
+            Class ($4000) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="flight"
+              id="business"
+              value="2000"
+            />Business Class ($2000) &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="flight" id="economy" value="500" />Economy
+            Class ($500)
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Choose your accomodations:</legend>
+            <input
+              type="radio"
+              name="accomodation"
+              id="luxury"
+              value="200"
+            />Luxury ($200/day) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="accomodation"
+              id="standard"
+              value="100"
+            />Standard ($100/day) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="accomodation"
+              id="budget"
+              value="50"
+            />Budget ($50/day)
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Choose attractions:</legend>
+            <input type="checkbox" name="attraction" id="KIBUNE" value="20" />
+            Kibune ($20)<br />
+            <input type="checkbox" name="attraction" id="KIFUNE" value="35" />
+            Kifune Shrine ($35)<br />
+            <input
+              type="checkbox"
+              name="attraction"
+              id="AMANOHASHIDATE"
+              value="100"
+            />
+            AMANOHASHIDATE ($100)<br />
+            <input type="checkbox" name="attraction" id="FUSHIMI" value="25" />
+            FUSHIMI INARI-TAISHA SHRINE ($25)<br />
+            <input type="checkbox" name="attraction" id="OSAKA" value="50" />
+            OSAKA CASTLE ($50)<br />
+          </fieldset>
+          <p>
+            How many people in your group? &nbsp;&nbsp;
+            <input type="number" name="peopleNum" id="people" value="" />
+          </p>
+          <p>
+            How many days are you travelling? &nbsp;&nbsp;
+            <input type="number" name="daysNum" id="days" value="" />
+          </p>
+          <p class="buttons">
+            <input type="reset" name="reset" id="btnReset" value="Reset" />
+            <input
+              type="button"
+              name="submit"
+              id="btnSubmit"
+              value="Calculate"
+            />
+          </p>
+        </form>
+      </div>
+
+      <div id="tab-2" class="tab-content">
+        <form id="travel2">
+          <fieldset>
+            <legend>Choose your flight classes:</legend>
+            <input type="radio" name="flight2" id="first" value="6800" />First
+            Class ($6800) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="flight2"
+              id="business"
+              value="2500"
+            />Business Class ($2500) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="flight2"
+              id="economy"
+              value="900"
+            />Economy Class ($900)
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Choose your accomodations:</legend>
+            <input
+              type="radio"
+              name="accomodation2"
+              id="luxury"
+              value="400"
+            />Luxury ($400/day) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="accomodation2"
+              id="standard"
+              value="100"
+            />Standard ($100/day) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="accomodation2"
+              id="budget"
+              value="50"
+            />Budget ($50/day)
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Choose attractions:</legend>
+            <input
+              type="checkbox"
+              name="attraction2"
+              id="Sipadan"
+              value="150"
+            />
+            Pulau Sipadan ($150)<br />
+            <input type="checkbox" name="attraction2" id="Sapi" value="130" />
+            Pulau Sapi ($130)<br />
+            <input
+              type="checkbox"
+              name="attraction2"
+              id="Semporna"
+              value="110"
+            />
+            Pulau Semporna ($110)<br />
+            <input
+              type="checkbox"
+              name="attraction2"
+              id="Kinabalu"
+              value="80"
+            />
+            Mount Kinabalu ($80)<br />
+          </fieldset>
+          <p>
+            How many people in your group? &nbsp;&nbsp;
+            <input type="number" name="peopleNum" id="people2" value="" />
+          </p>
+          <p>
+            How many days are you travelling? &nbsp;&nbsp;
+            <input type="number" name="daysNum" id="days2" value="" />
+          </p>
+          <p class="buttons">
+            <input type="reset" name="reset" id="btnReset" value="Reset" />
+            <input
+              type="button"
+              name="submit"
+              id="btnSubmit2"
+              value="Calculate"
+            />
+          </p>
+        </form>
+      </div>
+
+      <div id="tab-3" class="tab-content">
+        <form id="travel3">
+          <fieldset>
+            <legend>Choose your flight classes:</legend>
+            <input type="radio" name="flight3" id="first" value="5000" />First
+            Class ($5000) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="flight3"
+              id="business"
+              value="2500"
+            />Business Class ($2500) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="flight3"
+              id="economy"
+              value="600"
+            />Economy Class ($600)
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Choose your accomodations:</legend>
+            <input
+              type="radio"
+              name="accomodation3"
+              id="luxury"
+              value="300"
+            />Luxury ($300/day) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="accomodation3"
+              id="standard"
+              value="150"
+            />Standard ($150/day) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="accomodation3"
+              id="budget"
+              value="60"
+            />Budget ($60/day)
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Choose attractions:</legend>
+            <input
+              type="checkbox"
+              name="attraction3"
+              id="Oriental"
+              value="50"
+            />
+            Oriental Pearl Tower ($50)<br />
+            <input
+              type="checkbox"
+              name="attraction3"
+              id="Lujiazui"
+              value="50"
+            />
+            Lujiazui ($50)<br />
+            <input type="checkbox" name="attraction3" id="Disney" value="150" />
+            Shanghai Disney ($150)<br />
+            <input type="checkbox" name="attraction3" id="Jingan" value="100" />
+            Jing'an District ($100)<br />
+            <input type="checkbox" name="attraction3" id="Wukang" value="25" />
+            Wukang Road ($25)<br />
+            <input type="checkbox" name="attraction3" id="Bar" value="50" /> Bar
+            No.3($50)<br />
+          </fieldset>
+          <p>
+            How many people in your group? &nbsp;&nbsp;
+            <input type="number" name="peopleNum" id="people3" value="" />
+          </p>
+          <p>
+            How many days are you travelling? &nbsp;&nbsp;
+            <input type="number" name="daysNum" id="days3" value="" />
+          </p>
+          <p class="buttons">
+            <input type="reset" name="reset" id="btnReset" value="Reset" />
+            <input
+              type="button"
+              name="submit"
+              id="btnSubmit3"
+              value="Calculate"
+            />
+          </p>
+        </form>
+      </div>
+
+      <div id="tab-4" class="tab-content">
+        <form id="travel4">
+          <fieldset>
+            <legend>Choose your flight classes:</legend>
+            <input type="radio" name="flight4" id="first" value="6000" />First
+            Class ($6000) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="flight4"
+              id="business"
+              value="3000"
+            />Business Class ($3000) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="flight4"
+              id="economy"
+              value="800"
+            />Economy Class ($800)
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Choose your accomodations:</legend>
+            <input
+              type="radio"
+              name="accomodation4"
+              id="luxury"
+              value="500"
+            />Luxury ($500/day) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="accomodation4"
+              id="standard"
+              value="200"
+            />Standard ($200/day) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="accomodation4"
+              id="budget"
+              value="80"
+            />Budget ($80/day)
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Choose attractions:</legend>
+            <input type="checkbox" name="attraction4" id="Eiffel" value="100" />
+            Eiffel Tower ($100)<br />
+            <input type="checkbox" name="attraction4" id="Louvre" value="150" />
+            Musée du Louvre ($150)<br />
+            <input type="checkbox" name="attraction4" id="Moulin" value="25" />
+            Moulin Roug ($25)<br />
+            <input type="checkbox" name="attraction4" id="Wall" value="25" />
+            Wall of Love ($25)<br />
+            <input type="checkbox" name="attraction4" id="Orsay" value="100" />
+            Musée d'Orsay ($100)<br />
+          </fieldset>
+          <p>
+            How many people in your group? &nbsp;&nbsp;
+            <input type="number" name="peopleNum" id="people4" value="" />
+          </p>
+          <p>
+            How many days are you travelling? &nbsp;&nbsp;
+            <input type="number" name="daysNum" id="days4" value="" />
+          </p>
+          <p class="buttons">
+            <input type="reset" name="reset" id="btnReset" value="Reset" />
+            <input
+              type="button"
+              name="submit"
+              id="btnSubmit4"
+              value="Calculate"
+            />
+          </p>
+        </form>
+      </div>
+
+      <div id="tab-5" class="tab-content">
+        <form id="travel5">
+          <fieldset>
+            <legend>Choose your flight classes:</legend>
+            <input type="radio" name="flight5" id="first" value="5000" />First
+            Class ($5000) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="flight5"
+              id="business"
+              value="2500"
+            />Business Class ($2500) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="flight5"
+              id="economy"
+              value="900"
+            />Economy Class ($900)
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Choose your accomodations:</legend>
+            <input
+              type="radio"
+              name="accomodation5"
+              id="luxury"
+              value="300"
+            />Luxury ($300/day) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="accomodation5"
+              id="standard"
+              value="100"
+            />Standard ($100/day) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="accomodation5"
+              id="budget"
+              value="50"
+            />Budget ($50/day)
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Choose attractions:</legend>
+            <input
+              type="checkbox"
+              name="attraction5"
+              id="GreatBridge"
+              value="15"
+            />
+            Penghu Great Bridge ($15)<br />
+            <input type="checkbox" name="attraction5" id="Tongpan" value="70" />
+            Tongpan Island ($70)<br />
+            <input type="checkbox" name="attraction5" id="Erkan" value="25" />
+            Erkan Historical House ($25)<br />
+            <input
+              type="checkbox"
+              name="attraction5"
+              id="ZhongYang"
+              value="25"
+            />
+            Zhong Yang Old Street ($25)<br />
+            <input
+              type="checkbox"
+              name="attraction5"
+              id="TwinHeart"
+              value="80"
+            />
+            Twin Heart Stone Weir ($80)<br />
+            <input type="checkbox" name="attraction5" id="Xiaomen" value="30" />
+            Xiaomen Islet ($30)<br />
+          </fieldset>
+          <p>
+            How many people in your group? &nbsp;&nbsp;
+            <input type="number" name="peopleNum" id="people5" value="" />
+          </p>
+          <p>
+            How many days are you travelling? &nbsp;&nbsp;
+            <input type="number" name="daysNum" id="days5" value="" />
+          </p>
+          <p class="buttons">
+            <input type="reset" name="reset" id="btnReset" value="Reset" />
+            <input
+              type="button"
+              name="submit"
+              id="btnSubmit5"
+              value="Calculate"
+            />
+          </p>
+        </form>
+      </div>
+
+      <div id="tab-6" class="tab-content">
+        <form id="travel6">
+          <fieldset>
+            <legend>Choose your flight classes:</legend>
+            <input type="radio" name="flight6" id="first" value="6000" />First
+            Class ($6000) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="flight6"
+              id="business"
+              value="4500"
+            />Business Class ($4500) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="flight6"
+              id="economy"
+              value="2000"
+            />Economy Class ($2000)
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Choose your accomodations:</legend>
+            <input
+              type="radio"
+              name="accomodation6"
+              id="luxury"
+              value="400"
+            />Luxury ($400/day) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="accomodation6"
+              id="standard"
+              value="150"
+            />Standard ($150/day) &nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="accomodation6"
+              id="budget"
+              value="80"
+            />Budget ($80/day)
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Choose attractions:</legend>
+            <input type="checkbox" name="attraction6" id="PhiPhi" value="200" />
+            Phi Phi Island ($200)<br />
+            <input
+              type="checkbox"
+              name="attraction6"
+              id="JamesBond"
+              value="150"
+            />
+            James Bond Island ($150)<br />
+            <input
+              type="checkbox"
+              name="attraction6"
+              id="BigBuddha"
+              value="25"
+            />
+            Phuket Big Buddha ($30)<br />
+            <input type="checkbox" name="attraction6" id="Patong" value="25" />
+            Patong Beach ($25)<br />
+            <input type="checkbox" name="attraction6" id="Bangla" value="25" />
+            Bangla Street ($25)<br />
+          </fieldset>
+          <p>
+            How many people in your group? &nbsp;&nbsp;
+            <input type="number" name="peopleNum" id="people6" value="" />
+          </p>
+          <p>
+            How many days are you travelling? &nbsp;&nbsp;
+            <input type="number" name="daysNum" id="days6" value="" />
+          </p>
+          <p class="buttons">
+            <input type="reset" name="reset" id="btnReset" value="Reset" />
+            <input
+              type="button"
+              name="submit"
+              id="btnSubmit6"
+              value="Calculate"
+            />
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div id="output">
+      <h3>Your Travel Cost Estimation</h3>
+      <hr />
+      <p id="travelCost"></p>
+    </div>
+
+    <script src="scripts/travelCostScript.js"></script>
+  </body>
+</html>
